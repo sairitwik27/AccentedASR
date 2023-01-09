@@ -1,0 +1,4 @@
+The main directory for Accented ASR experiments. A detailed description of all the files in local repository is given.
+
+dann_train.sh ===> The frontend training script for DAT+ network.
+dann_test.sh ===> The frontend inference script for DAT+ network.

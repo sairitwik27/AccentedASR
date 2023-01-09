@@ -1,5 +1,6 @@
 The main directory for Accented ASR experiments. A detailed description of all the files in local repository is given.
 
+ind_run.sh ===> The frontend training script for standalone ASR network(transformer).
 dann_train.sh ===> The frontend training script for DAT+ network.
 dann_test.sh ===> The frontend inference script for DAT+ network.
 train_classifier.sh ===> The frontend training script for standalone pre-training of Accent Classifier.

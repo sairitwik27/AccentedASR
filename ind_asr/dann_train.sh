@@ -93,7 +93,7 @@ if [ ${stage} -le 4 ] && [ ${stop_stage} -ge 4 ]; then
     echo "stage 4: Network Training"
 
    CUDA_VISIBLE_DEVICES=${gpu} ${cuda_cmd} --gpu ${ngpu} ${expdir}/train.log \
-        /home/ritwikkvs/ritwik/espnet/egs/wsj/ind_asr/local/dann_asr_train.py \
+        /home/ritwikkvs/ritwik/espnet/egs/wsj/ind_asr/local/dann_asr_train.py \ #Add your custom repository path here
         --config ${train_config} \
         --preprocess-conf ${preprocess_config} \
         --ngpu ${ngpu} \
@@ -107,6 +107,6 @@ if [ ${stage} -le 4 ] && [ ${stop_stage} -ge 4 ]; then
         --verbose ${verbose} \
         --resume ${resume} \
         --seed ${seed} \
-        --train-json dump/nisp_train/deltafalse/data_with_labels.json \
-        --valid-json dump/nisp_test/deltafalse/data_with_labels.json
+        --train-json dump/nisp_train/deltafalse/data_with_labels.json \ #Give your custom dump train path here
+        --valid-json dump/nisp_test/deltafalse/data_with_labels.json #Give your custom validation path here
 fi
